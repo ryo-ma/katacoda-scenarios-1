@@ -14,7 +14,6 @@ MongoDBの起動には[Docker](https://www.docker.com/)を使います。
 
    `docker run --name mongodb -d mongo:4.4`{{copy}}
 
-
 2. 完了したら以下のコマンドで起動しているコンテナを確認します。
 
    `docker ps`{{copy}}
