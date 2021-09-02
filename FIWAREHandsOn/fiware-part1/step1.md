@@ -12,12 +12,12 @@ Step1ではOrionを起動するために必要な知識を習得します。
 
 1. 以下のコマンドでMongoDBを起動します。
 
-   docker run --name mongodb -d mongo:4.4`{{copy}}
+   `docker run --name mongodb -d mongo:4.4`{{copy}}
 
 
 2. 完了したら以下のコマンドで起動しているコンテナを確認します。
 
-   docker ps`{{copy}}
+   `docker ps`{{copy}}
 
    一覧に`mongodb`があれば成功です。
 
