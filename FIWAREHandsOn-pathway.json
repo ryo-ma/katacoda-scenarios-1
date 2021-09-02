@@ -1,11 +1,11 @@
 {
-  "title": "FIWARE Hands On",
-  "description": "FIWAREの基礎学習用 ハンズオンコースです。",
+  "title": "FIWARE 基礎編",
+  "description": "FIWAREの基礎学習用コースです。",
   "courses": [
     {
       "course_id": "fiware-part1",
-      "title": "FIWARE Part1",
-      "description": "FIWAREの基本的なコンポーネントを学習します"
+      "title": "Part1 FIWARE Orionの立ち上げ",
+      "description": "FIWAREのコアとなるコンポーネントの一つであるOrionのを立ち上げ方法を学習します"
     }
   ]
 }
