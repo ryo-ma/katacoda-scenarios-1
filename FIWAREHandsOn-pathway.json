@@ -1,0 +1,11 @@
+{
+  "title": "FIWARE Hands On",
+  "description": "FIWAREの基礎学習用 ハンズオンコースです。",
+  "courses": [
+    {
+      "course_id": "fiware-part1",
+      "title": "FIWARE Part1",
+      "description": "FIWAREの基本的なコンポーネントを学習します"
+    }
+  ]
+}
