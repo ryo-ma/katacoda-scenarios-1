@@ -1,14 +1,14 @@
 
-# Step1 - Orionを立ち上げよう
+# Step1 - FIWARE Orionを起動しよう
 
-Step1ではOrionを起動するために必要な知識を習得します。
+Step1ではFIWARE Orionを起動するために必要な知識を習得します。
 
-## 1-1 MongoDBの立ち上げ
+## 1-1 MongoDBの起動
 
 まずはOrionのデータベースとして使われるMongoDBの立ち上げを行いましょう。
 
-今回の立ち上げには[Docker](https://www.docker.com/)を使います。  
-※今回はDockerの説明については割愛します。
+MongoDBの起動には[Docker](https://www.docker.com/)を使います。  
+※今回はFIWAREの学習がメインなので[Docker](https://www.docker.com/)の説明については割愛します。
 
 1. 以下のコマンドでMongoDBを起動します。
 
@@ -21,7 +21,7 @@ Step1ではOrionを起動するために必要な知識を習得します。
 
    一覧に`mongodb`があれば成功です。
 
-## 1-2 Orionの立ち上げ
+## 1-2 Orionの起動
 
 次にOrion本体を起動します。
 
