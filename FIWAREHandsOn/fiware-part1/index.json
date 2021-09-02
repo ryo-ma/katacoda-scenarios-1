@@ -6,11 +6,11 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Step1 - FIWARE Orionを起動しよう",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Step2 - FIWARE Orionにアクセスしてみよう",
         "text": "step2.md"
       },
       {
