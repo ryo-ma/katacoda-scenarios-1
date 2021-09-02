@@ -20,7 +20,7 @@ Orionのデフォルトポートは`1026`で起動します。今回はコンテ
 
 1. localhostからの取得
 
-   `curl localhost:1026/v2/entites`{{copy}}
+   `curl localhost:1026/v2/entities`{{copy}}
 
 2. katacodaのドメイン(外部アクセス)からの取得
 
