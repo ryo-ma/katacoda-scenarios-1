@@ -7,11 +7,8 @@ Step1ではOrionを起動するために必要な知識を習得します。
 
 まずはOrionのデータベースとして使われるMongoDBの立ち上げを行いましょう。
 
-今回の立ち上げには[Docker](https://www.docker.com/)を使います。
-
+今回の立ち上げには[Docker](https://www.docker.com/)を使います。  
 ※今回はDockerの説明については割愛します。
-
-今回はレジストレーションサービス([DockerHub](https://hub.docker.com/))に公開されているMongoDBのImageを取得しコンテナとして起動します。
 
 以下のコマンドでMongoDBを起動します。
 
@@ -30,18 +27,12 @@ Step1ではOrionを起動するために必要な知識を習得します。
 
 MongoDBと同様にDockerHubに公開されているFIWARE公式のImageを使って起動することができます。
 
-次のdockerコマンドでは`-p`コマンドを使ってOrionへアクセスするためのポートフォワーディングの設定を行っています。
-
-Orionはデフォルトで`1026`番のポートで立ち上がりますので、そのままのポート番号でポートフォワーディングします。
-
-この設定によりコンテナの外部から`1026`番でアクセスできるようになります。
-
-また、`-dbhost`というオプションで先ほど作成したMongoDBのホスト名(コンテナ名)を指定して接続するようにします。
-
 以下のコマンドでOrionを起動します。
 
 `docker run -d --name orion --link mongodb:mongodb -p 1026:1026 fiware/orion -dbhost mongodb`{{copy}}
 
+以下のコマンドで起動しているコンテナを確認します。
+
 `docker ps`{{copy}}
 
-
+一覧に`orion`と`mongodb`があれば成功です。
