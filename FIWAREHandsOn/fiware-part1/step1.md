@@ -12,14 +12,14 @@ Step1ではOrionを起動するために必要な知識を習得します。
 
 1. 以下のコマンドでMongoDBを起動します。
 
-`docker run --name mongodb -d mongo:4.4`{{copy}}
+⋅⋅⋅`docker run --name mongodb -d mongo:4.4`{{copy}}
 
 
 2. 完了したら以下のコマンドで起動しているコンテナを確認します。
 
-`docker ps`{{copy}}
+⋅⋅⋅`docker ps`{{copy}}
 
-一覧に`mongodb`があれば成功です。
+⋅⋅⋅一覧に`mongodb`があれば成功です。
 
 ## 1-2 Orionの立ち上げ
 
@@ -27,12 +27,12 @@ Step1ではOrionを起動するために必要な知識を習得します。
 
 MongoDBと同様にDockerHubに公開されているFIWARE公式のImageを使って起動することができます。
 
-以下のコマンドでOrionを起動します。
+1. 以下のコマンドでOrionを起動します。
 
-1. `docker run -d --name orion --link mongodb:mongodb -p 1026:1026 fiware/orion -dbhost mongodb`{{copy}}
+⋅⋅⋅`docker run -d --name orion --link mongodb:mongodb -p 1026:1026 fiware/orion -dbhost mongodb`{{copy}}
 
-完了したら以下のコマンドで起動しているコンテナを確認します。
+2. 完了したら以下のコマンドで起動しているコンテナを確認します。
 
-2. `docker ps`{{copy}}
+⋅⋅⋅`docker ps`{{copy}}
 
-一覧に`orion`と`mongodb`があれば成功です。
+⋅⋅⋅一覧に`orion`と`mongodb`があれば成功です。
