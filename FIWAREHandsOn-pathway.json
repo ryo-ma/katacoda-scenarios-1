@@ -4,8 +4,8 @@
   "courses": [
     {
       "course_id": "fiware-part1",
-      "title": "Part1-FIWARE Orionの立ち上げ",
-      "description": "FIWAREのコアとなるコンポーネントの一つであるOrionの立ち上げ方法を学習します"
+      "title": "Part1-FIWARE Orion起動",
+      "description": "FIWAREの数あるコンポーネントの中でも重要な役割を担っているFIWARE Orionの起動方法を学習します。"
     }
   ]
 }

@@ -16,7 +16,7 @@ Orionのデフォルトポートは`1026`で起動します。今回はコンテ
 
    `curl https://[[HOST_SUBDOMAIN]]-1026-[[KATACODA_HOST]].environments.katacoda.com/version`{{copy}}
 
-1.も2.も同じ結果になり、json形式でOrionのバージョン情報が取得できれば成功です。
+1.も2.も同じ結果になります。json形式でOrionのバージョン情報が取得できれば成功です。
 
 # 2-2 OrionのEntity一覧を取得
 
@@ -28,4 +28,4 @@ Orionのデフォルトポートは`1026`で起動します。今回はコンテ
 
    `curl https://[[HOST_SUBDOMAIN]]-1026-[[KATACODA_HOST]].environments.katacoda.com/v2/entities`{{copy}}
 
-1.も2.も同じ結果になり、空のjson配列が帰ってくれば成功です。
+1.も2.も同じ結果になります。まだデータは入っていないので空のjson配列`[]`が帰ってくれば成功です。
