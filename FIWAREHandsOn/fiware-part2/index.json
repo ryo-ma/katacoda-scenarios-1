@@ -6,11 +6,11 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Step 1 - FWIARE Orionにデータを投入してみよう",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Step 2 - 投入したデータを確認してみよう",
         "text": "step2.md"
       }
     ],

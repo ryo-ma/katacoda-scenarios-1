@@ -1,0 +1,22 @@
+Part2ではFIWARE Orionにデータを投入するために必要な知識を習得します。
+
+
+# 1-1 FIWARE OrionとMongoDBの起動
+
+まずは以下の構成を作ります。
+
+![全体構成図](https://github.com/c-3lab/katacoda-scenarios/raw/main/assets/1-1.png)
+
+
+今回はdocker-composeを使い、FIWARE OrionとMongoDBの起動を同時に行います。  
+※今回はFIWAREの学習がメインなので[docker-compose](https://)の説明については割愛します。
+
+1. 以下のコマンドでFIWARE公式で公開されているdocker-compose.ymlをダウンロードします。
+
+   `wget https://github.com/telefonicaid/fiware-orion/raw/master/docker/docker-compose.yml`{{copy}}
+
+2. ダウンロードしたdocker-compose.ymlの中身を確認します。
+
+   `cat docker-compose.yml`{{copy}}
+
+   `orion`と`mongodb`の起動に必要な記述が書かれていることを確認します。
