@@ -30,3 +30,11 @@ Part2ではFIWARE Orionにデータを投入するために必要な知識を習
    `docker ps`{{copy}}
 
    一覧に`orion`と`mongodb`があれば成功です。
+
+# 1-2 FIWARE Orionの動作確認
+
+FIWARE Orionが問題なく動作していることを確認するために以下のコマンドを実行します。
+
+`curl localhost:1026/v2/entities`{{copy}}
+
+まだデータは入っていないので空のjson配列`[]`が帰ってくれば成功です。
