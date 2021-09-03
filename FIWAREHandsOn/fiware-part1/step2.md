@@ -4,6 +4,8 @@ Orionのデフォルトポートは`1026`で起動します。今回はコンテ
 
 ![MongoDB](https://github.com/c-3lab/katacoda-scenarios/raw/main/assets/2-1.png)
 
+問題なく動作していることを確認するため、`/version`と`/v2/entities`にアクセスしてみましょう。
+
 # 2-1 Orionのバージョン情報を取得
 
 1. localhostからの取得
