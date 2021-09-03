@@ -6,6 +6,11 @@
       "course_id": "fiware-part1",
       "title": "Part1-FIWARE Orion起動",
       "description": "FIWAREの数あるコンポーネントの中でも重要な役割を担っているFIWARE Orionの起動方法を学習します。"
+    },
+    {
+      "course_id": "fiware-part2",
+      "title": "Part2-FIWARE Orionへのデータ投入",
+      "description": "FIWARE Orionにサンプルデータの投入をすることでAPIおよびデータ形式を学習します"
     }
   ]
 }
