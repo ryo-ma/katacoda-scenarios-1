@@ -1,8 +1,7 @@
 先ほど起動したFIWARE Orionにアクセスします。
-
 Orionのデフォルトポートは`1026`で起動します。今回はコンテナの外からも同じように`1026`でアクセスできるようにポートフォワーディングしています。
 
-![MongoDB](https://github.com/c-3lab/katacoda-scenarios/raw/main/assets/2-1.png)
+![構成図](https://github.com/c-3lab/katacoda-scenarios/raw/main/assets/part1/2-1.png)
 
 問題なく動作していることを確認するため、`/version`と`/v2/entities`にアクセスしてみましょう。
 
