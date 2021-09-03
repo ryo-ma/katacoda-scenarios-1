@@ -2,7 +2,7 @@ Step1ではFIWARE Orionを起動するために必要な知識を習得します
 
 このパートでは以下の構成を目指します。
 
-![全体構成図](./assets/1-1.png)
+![全体構成図](https://github.com/c-3lab/katacoda-scenarios/raw/main/assets/1-1.png)
 
 # 1-1 MongoDBの起動
 
