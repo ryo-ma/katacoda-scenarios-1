@@ -8,6 +8,8 @@ Step1ではFIWARE Orionを起動するために必要な知識を習得します
 
 まずはOrionのデータベースとして使われるMongoDBの立ち上げを行いましょう。
 
+![MongoDB](https://github.com/c-3lab/katacoda-scenarios/raw/main/assets/1-2.png)
+
 MongoDBの起動には[Docker](https://www.docker.com/)を使います。  
 ※今回はFIWAREの学習がメインなので[Docker](https://www.docker.com/)の説明については割愛します。
 
@@ -24,6 +26,8 @@ MongoDBの起動には[Docker](https://www.docker.com/)を使います。
 # 1-2 Orionの起動
 
 次にOrion本体を起動します。
+
+![Orion](https://github.com/c-3lab/katacoda-scenarios/raw/main/assets/1-3.png)
 
 MongoDBと同様にDockerHubに公開されているFIWARE公式のImageを使って起動することができます。
 
