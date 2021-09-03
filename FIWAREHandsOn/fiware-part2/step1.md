@@ -5,7 +5,7 @@ Part2ではFIWARE Orionにデータを投入するために必要な知識を習
 
 まずは以下の構成を作ります。
 
-![全体構成図](https://github.com/c-3lab/katacoda-scenarios/raw/main/assets/1-1.png)
+![全体構成図](https://github.com/c-3lab/katacoda-scenarios/raw/main/assets/part1/1-1.png)
 
 
 今回はdocker-composeを使い、FIWARE OrionとMongoDBの起動を同時に行います。  
