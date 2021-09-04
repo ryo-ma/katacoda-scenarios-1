@@ -21,6 +21,14 @@
       "text": "finish.md"
     }
   },
+  "assets": {
+    "client": [
+       {
+         "file": "example-ngsi.json",
+         "target": "~/"
+       }
+    ]
+  },
   "environment": {
     "uilayout": "terminal"
   },
