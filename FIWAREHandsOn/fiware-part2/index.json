@@ -22,10 +22,10 @@
     }
   },
   "assets": {
-    "client": [
+    "host01": [
        {
          "file": "example-ngsi.json",
-         "target": "~/"
+         "target": "/root/"
        }
     ]
   },
