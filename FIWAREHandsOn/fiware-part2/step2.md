@@ -13,7 +13,7 @@ NGSIv2は以下のようなデータモデルになります。
 NGSIではjson形式でデータを表現します。  
 実例のデータを見て見ましょう。
 
-`cat example-ngsi.json`
+`cat example-ngsi.json`{{copy}}
 
 
 データモデル図の踏まえて、以下に実例として部屋(Room)の温度(temperature)と湿度(pressure)の情報を含んだEntityを示しています。
@@ -30,7 +30,7 @@ Entityを登録する際はHTTPで`/v2/entities`というエンドポイント�
 
 先ほど投入したEntityを確認します。
 
-`curl localhost:1026/v2/entities`{{copy}}
+`curl localhost:1026/v2/entities | jq`{{copy}}
 
 
 ## 2-3 データの更新
@@ -63,4 +63,4 @@ example-ngsi.jsonを以下のようにそれぞれのvalueを変更して見ま�
 
 Entityが更新されていることを確認します。
 
-`curl localhost:1026/v2/entities`{{copy}}
+`curl localhost:1026/v2/entities | jq`{{copy}}
