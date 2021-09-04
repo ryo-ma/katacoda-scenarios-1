@@ -30,7 +30,8 @@
     }
   },
   "environment": {
-    "uilayout": "terminal"
+    "uilayout": "terminal",
+    "showide": true
   },
   "backend": {
     "imageid": "docker-swarm"
