@@ -29,6 +29,7 @@
       ]
     }
   },
+  "files":["example-ngsi.json"],
   "environment": {
     "uilayout": "terminal",
     "showide": true
