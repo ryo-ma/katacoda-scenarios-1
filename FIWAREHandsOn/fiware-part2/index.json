@@ -19,15 +19,15 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+         {
+           "file": "example-ngsi.json",
+           "target": "/root/"
+         }
+      ]
     }
-  },
-  "assets": {
-    "host01": [
-       {
-         "file": "example-ngsi.json",
-         "target": "/root/"
-       }
-    ]
   },
   "environment": {
     "uilayout": "terminal"
