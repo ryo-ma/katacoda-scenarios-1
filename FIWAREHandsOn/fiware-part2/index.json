@@ -10,8 +10,12 @@
         "text": "step1.md"
       },
       {
-        "title": "Step 2 - FIWARE Orionにデータを投入してみよう",
+        "title": "Step 2 - FIWARE Orionにデータを登録してみよう",
         "text": "step2.md"
+      },
+      {
+        "title": "Step 3 - ",
+        "text": "step3.md"
       }
     ],
     "intro": {
@@ -23,7 +27,11 @@
     "assets": {
       "host01": [
          {
-           "file": "example-ngsi.json",
+           "file": "example-ngsi-room1.json",
+           "target": "/root/"
+         },
+         {
+           "file": "example-ngsi-room2.json",
            "target": "/root/"
          }
       ]

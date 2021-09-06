@@ -1,10 +1,10 @@
-# 2-1 FIWARE Orionにデータを投入
+データを投入するためにデータの形式を学びましょう。
 
+## 2-1 NGSI v2 について
 
 FIWARE OrionではNGSIという形式でデータの管理を行います。  
 ※今回はNGSI v2を使います。
 
-## 2-1-1 NGSI v2 について
 
 NGSIv2は以下のようなデータモデルになります。
 
@@ -13,7 +13,7 @@ NGSIv2は以下のようなデータモデルになります。
 NGSIではjson形式でデータを表現します。  
 実例のデータを見て見ましょう。
 
-`cat example-ngsi.json`{{copy}}
+`cat example-ngsi-room1.json`{{copy}}
 
 
 データモデル図の踏まえて、以下に実例として部屋(Room)の温度(temperature)と湿度(pressure)の情報を含んだEntityを示しています。
@@ -26,18 +26,19 @@ NGSIではjson形式でデータを表現します。
 以下のコマンドで先ほどのEntityをOrionに登録して見ましょう。  
 Entityを登録する際はHTTPで`/v2/entities`というエンドポイントに対してPOSTをおこないます。
 
-`curl localhost:1026/v2/entities -s -S -H 'Content-Type: application/json' -d @example-ngsi.json`{{copy}}
+1.`curl localhost:1026/v2/entities -s -S -H 'Content-Type: application/json' -d @example-ngsi-room1.json`{{copy}}
 
-先ほど投入したEntityを確認します。
+   先ほど投入したEntityを確認します。
 
-`curl localhost:1026/v2/entities | jq`{{copy}}
+2.`curl localhost:1026/v2/entities | jq`{{copy}}
 
 
 ## 2-3 データの更新
 
-更新の際も登録と同じ方法をとることができます。
+更新の際も登録と同じ方法をとることができます。  
+同じEntityのidで
 
-example-ngsi.jsonを以下のようにそれぞれのvalueを変更して見ましょう。
+example-ngsi-room1.jsonを以下のようにそれぞれのvalueを変更して見ましょう。
 
 ```json
 {
@@ -59,8 +60,45 @@ example-ngsi.jsonを以下のようにそれぞれのvalueを変更して見ま�
 
 再び`/v2/entities`に対してPOSTを行います。
 
-`curl localhost:1026/v2/entities -s -S -H 'Content-Type: application/json' -d @example-ngsi.json`{{copy}}
+1.`curl localhost:1026/v2/entities -s -S -H 'Content-Type: application/json' -d @example-ngsi-room1.json`{{copy}}
 
-Entityが更新されていることを確認します。
+   Entityが更新されていることを確認します。
 
-`curl localhost:1026/v2/entities | jq`{{copy}}
+2.`curl localhost:1026/v2/entities | jq`{{copy}}
+
+
+## Entityの追加
+
+現在登録されているEntity idとは異なるidを`/v2/entities`に対してPOSTした場合は別のEntityとして登録されます。
+
+
+id Room2を追加します。
+
+`cat example-ngsi-room2.json`{{copy}}
+
+```json
+{
+  "id": "Room2",
+  "type": "Room",
+  "temperature": {
+     "value": 19.9,
+     "type": "Float",
+     "metadata": {}
+  },
+  "pressure": {
+     "value": 719,
+     "type": "Integer",
+     "metadata": {}
+  }
+}
+```
+
+`/v2/entities`に対してPOSTを行います。
+
+1.`curl localhost:1026/v2/entities -s -S -H 'Content-Type: application/json' -d @example-ngsi-room1.json`{{copy}}
+
+   Room2 Entityが追加されていることを確認します
+
+2.`curl localhost:1026/v2/entities | jq`{{copy}}
+
+   Room1とRoom2のEntityが表示されれば成功です。
