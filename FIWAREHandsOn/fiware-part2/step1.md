@@ -19,7 +19,7 @@ Part2ではFIWARE Orionにデータを投入するために必要な知識を習
 
    `cat docker-compose.yml`{{copy}}
 
-   `orion`と`mongodb`の起動に必要な記述が書かれていることを確認します。
+   *orion*と*mongodb*の起動に必要な記述が書かれていることを確認します。
 
 3. ダウンロードしたdocker-compose.ymlを実行します。※ファイルを指定しない場合はデフォルトで`docker-compose.yml`が実行されます。
 
@@ -29,7 +29,7 @@ Part2ではFIWARE Orionにデータを投入するために必要な知識を習
 
    `docker ps`{{copy}}
 
-   一覧に`orion`と`mongodb`があれば成功です。
+   一覧に*orion*と*mongodb*があれば成功です。
 
 # 1-2 FIWARE Orionの動作確認
 
