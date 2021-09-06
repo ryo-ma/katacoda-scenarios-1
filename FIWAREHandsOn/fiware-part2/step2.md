@@ -26,11 +26,11 @@ NGSIではjson形式でデータを表現します。
 以下のコマンドで先ほどのEntityをOrionに登録して見ましょう。  
 Entityを登録する際はHTTPで`/v2/entities`というエンドポイントに対してPOSTをおこないます。
 
-1.`curl localhost:1026/v2/entities -s -S -H 'Content-Type: application/json' -d @example-ngsi-room1.json`{{copy}}
+1. `curl localhost:1026/v2/entities -s -S -H 'Content-Type: application/json' -d @example-ngsi-room1.json`{{copy}}
 
    先ほど投入したEntityを確認します。
 
-2.`curl localhost:1026/v2/entities | jq`{{copy}}
+2. `curl localhost:1026/v2/entities | jq`{{copy}}
 
 
 ## 2-3 データの更新
@@ -60,11 +60,11 @@ example-ngsi-room1.jsonを以下のようにそれぞれのvalueを変更して�
 
 再び`/v2/entities`に対してPOSTを行います。
 
-1.`curl localhost:1026/v2/entities -s -S -H 'Content-Type: application/json' -d @example-ngsi-room1.json`{{copy}}
+1. `curl localhost:1026/v2/entities -s -S -H 'Content-Type: application/json' -d @example-ngsi-room1.json`{{copy}}
 
    Entityが更新されていることを確認します。
 
-2.`curl localhost:1026/v2/entities | jq`{{copy}}
+2. `curl localhost:1026/v2/entities | jq`{{copy}}
 
 
 ## Entityの追加
@@ -95,10 +95,10 @@ id Room2を追加します。
 
 `/v2/entities`に対してPOSTを行います。
 
-1.`curl localhost:1026/v2/entities -s -S -H 'Content-Type: application/json' -d @example-ngsi-room1.json`{{copy}}
+1. `curl localhost:1026/v2/entities -s -S -H 'Content-Type: application/json' -d @example-ngsi-room1.json`{{copy}}
 
    Room2 Entityが追加されていることを確認します
 
-2.`curl localhost:1026/v2/entities | jq`{{copy}}
+2. curl localhost:1026/v2/entities | jq`{{copy}}
 
    Room1とRoom2のEntityが表示されれば成功です。
