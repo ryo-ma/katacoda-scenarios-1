@@ -24,7 +24,7 @@ NGSIではjson形式でデータを表現します。
 ## 2-2 Entityの登録
 
 以下のコマンドで先ほどのEntityをOrionに登録して見ましょう。  
-Entityを登録する際はHTTPで`/v2/entities`というエンドポイントに対してPOSTをおこないます。
+Entityを登録する際はHTTPで**/v2/entities**というエンドポイントに対してPOSTをおこないます。
 
 1. Room1を登録します。
 
@@ -60,7 +60,7 @@ example-ngsi-room1.jsonを以下のようにそれぞれのvalueを変更して�
 
 ```
 
-再び`/v2/entities`に対してPOSTを行います。
+再び**/v2/entities**に対してPOSTを行います。
 
 1. Room1の値を更新します。
    `curl localhost:1026/v2/entities -s -S -H 'Content-Type: application/json' -d @example-ngsi-room1.json`{{copy}}
@@ -72,10 +72,10 @@ example-ngsi-room1.jsonを以下のようにそれぞれのvalueを変更して�
 
 ## Entityの追加
 
-現在登録されているEntity idとは異なるidを`/v2/entities`に対してPOSTした場合は別のEntityとして登録されます。
+現在登録されているEntity idとは異なるidを**/v2/entities**に対してPOSTした場合は別のEntityとして登録されます。
 
 
-id Room2を追加します。
+以下のコマンドで追加するRoom2のEntityを確認します。
 
 `cat example-ngsi-room2.json`{{copy}}
 
@@ -100,7 +100,7 @@ id Room2を追加します。
 
    `curl localhost:1026/v2/entities -s -S -H 'Content-Type: application/json' -d @example-ngsi-room1.json`{{copy}}
 
-2. Room2 Entityが追加されていることを確認します
+2. Room2 Entityが追加されていることを確認します。
 
    `curl localhost:1026/v2/entities | jq`{{copy}}
 
