@@ -38,7 +38,7 @@ Entityを登録する際はHTTPで**/v2/entities**というエンドポイント
 ## 2-3 データの更新
 
 更新の際も登録と同じ方法をとることができます。  
-同じEntityのidで
+同じEntityのidで再び**/v2/entities/**に対してPOSTを行います。
 
 example-ngsi-room1.jsonを以下のようにそれぞれのvalueを変更して見ましょう。
 
@@ -98,7 +98,7 @@ example-ngsi-room1.jsonを以下のようにそれぞれのvalueを変更して�
 
 1. Room2を登録します。
 
-   `curl localhost:1026/v2/entities -s -S -H 'Content-Type: application/json' -d @example-ngsi-room1.json`{{copy}}
+   `curl localhost:1026/v2/entities -s -S -H 'Content-Type: application/json' -d @example-ngsi-room2.json`{{copy}}
 
 2. Room2 Entityが追加されていることを確認します。
 

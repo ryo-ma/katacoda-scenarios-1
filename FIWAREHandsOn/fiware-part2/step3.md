@@ -11,3 +11,6 @@
 keyValuesオプションを使うことで属性値だけを含めコンパクトに表示することができます。
 
 `curl localhost:1026/v2/entities/Room1?options=keyValues | jq`{{copy}}
+
+
+# 3-3 
