@@ -36,4 +36,3 @@ attrsを指定することで取得するattributeの指定と順序を指定す
 
 `curl localhost:1026/v2/entities/Room1/attrs/temperature/value`{{copy}}
 
-
