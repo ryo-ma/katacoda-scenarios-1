@@ -43,7 +43,7 @@ Entityのidやtypeを変更する必要がない場合はattributeのみの更�
 
 1. Room1のattributeを更新します。
    ```
-   curl localhost:1026/v2/entities/Room1/attrs -s -S -H 'Content-Type: application/json'-X PATCH -d @- <<EOF
+   curl localhost:1026/v2/entities/Room1/attrs -s -S -H 'Content-Type: application/json' -X PATCH -d @- <<EOF
    {
      "temperature": {
        "value": 26.5,
