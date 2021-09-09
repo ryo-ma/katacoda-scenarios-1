@@ -1,4 +1,4 @@
-データを投入するためにデータの形式を学びましょう。
+Orionのデータ操作を行うためにデータの形式を学びましょう。
 
 # 2-1 NGSI v2 について
 
@@ -20,6 +20,7 @@ NGSIではjson形式でデータを表現します。
 
 ![NGSIv2](https://github.com/c-3lab/katacoda-scenarios/raw/main/assets/part2/2-1.png)
 
+Orionではコンテキスト情報(例では温度、湿度など)を含めたデータの一括りをEntityと呼びます。
 
 # 2-2 Entityの登録
 
@@ -35,46 +36,35 @@ Entityを登録する際はHTTPで**/v2/entities**というエンドポイント
    `curl localhost:1026/v2/entities | jq`{{copy}}
 
 
-# 2-3 Entityの更新
+# 2-3 Entity attributeを更新
 
-更新の際も登録と同じ方法をとることができます。  
-同じEntityのidで再び**/v2/entities/**に対してPOSTを行います。
+Entityのidやtypeを変更する必要がない場合はattributeのみの更新を行えます。  
 
-example-ngsi-room1.jsonを以下のようにそれぞれのvalueを変更して見ましょう。
-
-```json
-{
-  "id": "Room1",
-  "type": "Room",
-  "temperature": {
-     "value": 25.1,
-     "type": "Float",
-     "metadata": {}
-  },
-  "pressure": {
-     "value": 721,
-     "type": "Integer",
-     "metadata": {}
-  }
-}
-
-```
-
-再び**/v2/entities**に対してPOSTを行います。
-
-1. Room1の値を更新します。
-   `curl localhost:1026/v2/entities -s -S -H 'Content-Type: application/json' -d @example-ngsi-room1.json`{{copy}}
+1. Room1のattributeを更新します。
+   ```
+   curl localhost:1026/v2/entities/Room1/attrs -s -S -H 'Content-Type: application/json'-X PATCH -d @ - <<EOF
+   {
+     "temperature": {
+       "value": 26.5,
+       "type": "Float"
+     },
+     "pressure": {
+       "value": 763,
+       "type": "Float"
+     }
+   }
+   ```{{copy}}
 
 2. Entityが更新されていることを確認します。
 
    `curl localhost:1026/v2/entities | jq`{{copy}}
 
-## 2-3-1 attributeのみの更新
+# 2-4 attributeのvalueのみの更新
 
 Entityのidやtypeを変更する必要がない場合はattributeのみの更新を行えます。  
 
 
-1. Room1の値を更新します。
+1. Room1のvalueを更新します。
    ```
    curl localhost:1026/v2/entities/Room1/attrs -s -S -H 'Content-Type: application/json'-X PATCH -d @ - <<EOF
    {
@@ -95,7 +85,7 @@ Entityのidやtypeを変更する必要がない場合はattributeのみの更�
 
 
 
-# 2-4Entityの追加
+# 2-5 Entityの追加
 
 現在登録されているEntity idとは異なるidを**/v2/entities**に対してPOSTした場合は別のEntityとして登録されます。
 

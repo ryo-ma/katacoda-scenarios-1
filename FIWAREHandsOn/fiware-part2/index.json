@@ -1,6 +1,6 @@
 {
   "title": "FIWARE Part2",
-  "description": "FIWARE Orionにサンプルデータの投入をすることでAPIおよびデータ形式を学習します",
+  "description": "FIWARE Orionにおけるデータの操作およびAPIおよびデータ形式を学習します",
   "difficulty": "Beginner",
   "time": "10minutes",
   "details": {
@@ -10,7 +10,7 @@
         "text": "step1.md"
       },
       {
-        "title": "Step 2 - FIWARE Orionにデータを登録してみよう",
+        "title": "Step 2 - FIWARE Orionのデータを登録、更新をしてみよう",
         "text": "step2.md"
       },
       {
