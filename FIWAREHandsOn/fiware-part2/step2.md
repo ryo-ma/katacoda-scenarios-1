@@ -39,6 +39,7 @@ Entityを登録する際はHTTPで**/v2/entities**というエンドポイント
 # 2-3 Entity attributeを更新
 
 Entityのidやtypeを変更する必要がない場合はattributeのみの更新を行えます。  
+**/v2/entities/{id}/attrs**に対してPOSTを行うことで複数のattributeを更新できます。
 
 1. Room1のattributeを更新します。
    ```
@@ -53,6 +54,7 @@ Entityのidやtypeを変更する必要がない場合はattributeのみの更�
        "type": "Float"
      }
    }
+   EOF
    ```{{copy}}
 
 2. Entityが更新されていることを確認します。
@@ -61,28 +63,16 @@ Entityのidやtypeを変更する必要がない場合はattributeのみの更�
 
 # 2-4 attributeのvalueのみの更新
 
-Entityのidやtypeを変更する必要がない場合はattributeのみの更新を行えます。  
+**/v2/entities/{id}/attrs/{attrName}/value**に対してPUTを行うことで値のみを指定して更新できます。  
+ここではContent-typeがtext/plainとなる点を注意します。
 
 
 1. Room1のvalueを更新します。
-   ```
-   curl localhost:1026/v2/entities/Room1/attrs -s -S -H 'Content-Type: application/json'-X PATCH -d @ - <<EOF
-   {
-     "temperature": {
-       "value": 26.5,
-       "type": "Float"
-     },
-     "pressure": {
-       "value": 763,
-       "type": "Float"
-     }
-   }
-   ```{{copy}}
+   `curl localhost:1026/v2/entities/Room1/attrs/temperature/value -s -S -H 'Content-Type: text/plain' -X PUT -d 28.5`{{copy}}
 
 2. Entityが更新されていることを確認します。
 
    `curl localhost:1026/v2/entities | jq`{{copy}}
-
 
 
 # 2-5 Entityの追加
