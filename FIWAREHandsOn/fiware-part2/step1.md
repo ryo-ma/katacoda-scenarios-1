@@ -1,4 +1,4 @@
-Part2ではFIWARE Orionにデータを投入するために必要な知識を習得します。
+Part2ではFIWARE Orionのデータ操作における基本的な操作を学習していきます。
 
 
 # 1-1 FIWARE OrionとMongoDBの起動

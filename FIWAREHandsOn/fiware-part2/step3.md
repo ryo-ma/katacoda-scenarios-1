@@ -44,3 +44,21 @@ attrsを指定することで取得するattributeの指定と順序を指定す
 
 `curl localhost:1026/v2/entities/Room1/attrs/temperature/value`{{copy}}
 
+# 3-7 その他高度なEntityの取得
+
+## 3-7-1 idPatternによるEntityの取得
+
+idPatterオプションを使うことで正規表現によってEntityをフィルタリングすることができます。  
+以下のコマンドではidがRoomから始まり、次に数字が1~2の範囲に続くEntityを取得することができます。
+
+`curl localhost:1026/v2/entities?idPattern=^Room[1-2] -g | jq`{{copy}}
+
+
+## 3-7-2 クエリ言語によるEntityの取得
+
+qオプションにより、クエリ言語によるフィルタリングを行うことができます。  
+以下のコマンドではtemperatureのvalueが22よりも大きいEntityを取得することができます。
+
+`curl 'localhost:1026/v2/entities?q=temperature>22' | jq`{{copy}}
+
+[FIWARE NGSI v2 Specification](http://telefonicaid.github.io/fiware-orion/api/v2/stable/)の**SimpleQueryLanguage**の項目に様々な指定方法が書かれています。

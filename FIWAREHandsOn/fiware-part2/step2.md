@@ -51,7 +51,7 @@ Entityのidやtypeを変更する必要がない場合はattributeのみの更�
      },
      "pressure": {
        "value": 763,
-       "type": "Float"
+       "type": "Integer"
      }
    }
    EOF
