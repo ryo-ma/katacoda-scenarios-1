@@ -9,8 +9,8 @@
     },
     {
       "course_id": "fiware-part2",
-      "title": "Part2-FIWARE Orionへのデータ投入",
-      "description": "FIWARE Orionにサンプルデータの投入をすることでAPIおよびデータ形式を学習します"
+      "title": "Part2-FIWARE Orionにおけるデータの操作",
+      "description": "FIWARE Orionにおけるデータの操作およびAPIおよびデータ形式を学習します"
     }
   ]
 }
