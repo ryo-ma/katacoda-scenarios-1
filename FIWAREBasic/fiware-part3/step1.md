@@ -89,4 +89,4 @@ pressureの値を変更してみます。
 **Terminal2**を開きログを確認してみます。  
 通知された結果が以下のように出力されています。
 
-![Result](./assets/3-2.png)
+![Result](./assets/3-5.png)
