@@ -31,7 +31,7 @@ Open New Terminalを押します。
 
 ![OpenTerminal](./assets/3-2.png)
 
-新しいTerminalで以下のコマンドを実行しサンプルアプリを起動します。
+新しいTerminalで以下のコマンドを実行し[FIWAREが公開しているサンプルアプリ](https://github.com/telefonicaid/fiware-orion/blob/master/scripts/accumulator-server.py)を起動します。
 
 `./accumulator-server.py --port 1028 --url /accumulate --pretty-print -v`{{copy}}
 
@@ -79,5 +79,3 @@ pressureの値を変更してみます。
 
 新しいTerminalを開きログを確認してみます。  
 通知された結果が以下のように出力されています。
-
-# 1-3 
