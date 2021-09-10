@@ -10,7 +10,7 @@ Part3ではFIWARE OrionのSubscription機能について学習していきます
 
 ターミナルの処理が終了したら以下のコマンドで動作確認します。
 
-`curl localhost:1026/v2/entities`{{copy}}
+`curl localhost:1026/v2/entities | jq`{{copy}}
 
 初期データとして登録されているRoom1のEntityが表示されたら成功です。
 
@@ -20,7 +20,7 @@ Part3ではFIWARE OrionのSubscription機能について学習していきます
 FIWARE Orionにはデータの変更を検知して特定のシステムへ通知する機能があります。
 **/v2/subscriptions/**に通知先の設定をすることで実現できます。
 
-```
+```json
 curl -v localhost:1026/v2/subscriptions -s -S -H 'Content-Type: application/json' -d @- <<EOF
 {
 	"description": "A subscription to get info about Room1",
