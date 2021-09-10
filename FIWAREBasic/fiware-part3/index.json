@@ -1,13 +1,14 @@
 {
-  "title": "FIWARE Part2",
-  "description": "FIWARE Orionにおけるデータの操作およびAPIおよびデータ形式を学習します",
+  "title": "FIWARE Part3",
+  "description": "FIWARE OrionのSubscription機能について学習します",
   "difficulty": "Beginner",
   "time": "10minutes",
   "details": {
     "steps": [
       {
-        "title": "Step 1 - FWIARE Orionを起動しよう",
-        "text": "step1.md"
+        "title": "Step 1 - FIWARE Orion Subscription機能について",
+        "text": "step1.md",
+        "foreground": "setup.sh"
       },
       {
         "title": "Step 2 - FIWARE Orionのデータを登録、更新をしてみよう",
