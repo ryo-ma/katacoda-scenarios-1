@@ -20,10 +20,31 @@ Part3ではFIWARE OrionのSubscription機能について学習していきます
 FIWARE Orionにはデータの変更を検知して特定のシステムへ通知する機能があります。
 **/v2/subscriptions/**に通知先の設定をすることで実現できます。
 
+
+### 通知先のサンプルアプリを起動
+
+新しいTerminalを開きます。
+
+![OpenTerminal](./assets/3-1.png)
+
+新しいTerminalで以下のコマンドを実行しサンプルアプリを起動します。
+
+`./accumulator-server.py --port 1028 --url /accumulate --pretty-print -v`{{copy}}
+
+このアプリはhttpでアクセスしてきた情報をログとして表示するサーバです。  
+このアプリを使ってOrionからの通知の内容を確認していきます。
+
+
+### Subscriptionの設定
+
+元のTerminalに戻ります。  
+以下のコマンドでSubscriptionの設定を行います。
+
+
 ```json
 curl -v localhost:1026/v2/subscriptions -s -S -H 'Content-Type: application/json' -d @- <<EOF
 {
-	"description": "A subscription to get info about Room1",
+  "description": "A subscription to get info about Room1",
   "subject": {
     "entities": [
       {
@@ -32,7 +53,7 @@ curl -v localhost:1026/v2/subscriptions -s -S -H 'Content-Type: application/json
       }
     ],
     "condition": {
-      "attr": ["pressuer"]
+      "attr": ["pressure"]
     }
   },
   "notification": {
@@ -40,15 +61,19 @@ curl -v localhost:1026/v2/subscriptions -s -S -H 'Content-Type: application/json
       "url": "https://[[HOST_SUBDOMAIN]]-1028-[[KATACODA_HOST]].environments.katacoda.com/accumulate"
     },
     "attrs": [
-      "temperature"
+      "pressure"
     ]
   }
 }
 EOF
 ```{{copy}}
 
-pressuerの値を変更してみます。
+
+pressureの値を変更してみます。
 
 `curl localhost:1026/v2/entities/Room1/attrs/pressure/value -s -S -H 'Content-Type: text/plain' -X PUT -d 28.5`{{copy}}
+
+新しいTerminalを開きログを確認してみます。  
+通知された結果が以下のように出力されています。
 
 # 1-3 
