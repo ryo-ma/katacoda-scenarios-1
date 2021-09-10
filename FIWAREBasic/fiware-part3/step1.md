@@ -40,17 +40,17 @@ Open New Terminalを押します。
 
 ![OpenTerminal](./assets/3-2.png)
 
-新しいTerminalで以下のコマンドを実行し[FIWAREが公開しているサンプルアプリ](https://github.com/telefonicaid/fiware-orion/blob/master/scripts/accumulator-server.py)を起動します。
+**Terminal2**で以下のコマンドを実行し[FIWAREが公開しているサンプルアプリ](https://github.com/telefonicaid/fiware-orion/blob/master/scripts/accumulator-server.py)を起動します。
 
 `./accumulator-server.py --port 1028 --url /accumulate --pretty-print -v`{{copy}}
 
-このアプリはhttpでアクセスしてきた情報をログとして表示するサーバです。  
+これはhttpでアクセスしてきた情報をログとして表示するサーバです。  
 このアプリを使ってOrionからの通知の内容を確認していきます。
 
 
 ### Subscriptionの設定
 
-元のTerminalに戻ります。  
+**元のTerminal**に戻ります。  
 以下のコマンドでSubscriptionの設定を行います。
 
 
@@ -86,7 +86,7 @@ pressureの値を変更してみます。
 
 `curl localhost:1026/v2/entities/Room1/attrs/pressure/value -s -S -H 'Content-Type: text/plain' -X PUT -d 28.5`{{copy}}
 
-新しいTerminalを開きログを確認してみます。  
+**Terminal2**を開きログを確認してみます。  
 通知された結果が以下のように出力されています。
 
 ![Result](./assets/3-2.png)
