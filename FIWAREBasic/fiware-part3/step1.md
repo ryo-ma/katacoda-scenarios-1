@@ -47,5 +47,8 @@ curl -v localhost:1026/v2/subscriptions -s -S -H 'Content-Type: application/json
 EOF
 ```{{copy}}
 
+pressuerの値を変更してみます。
+
+`curl localhost:1026/v2/entities/Room1/attrs/pressure/value -s -S -H 'Content-Type: text/plain' -X PUT -d 28.5`{{copy}}
 
 # 1-3 
