@@ -71,7 +71,7 @@ curl -v localhost:1026/v2/subscriptions -s -S -H 'Content-Type: application/json
   },
   "notification": {
     "http": {
-      "url": "https://[[HOST_SUBDOMAIN]]-1028-[[KATACODA_HOST]].environments.katacoda.com/accumulate"
+      "url": "http://[[HOST_SUBDOMAIN]]-1028-[[KATACODA_HOST]].environments.katacoda.com/accumulate"
     },
     "attrs": [
       "pressure"
