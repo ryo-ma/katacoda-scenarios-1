@@ -28,7 +28,11 @@ POSTする際のbodyは以下の通りです。
 
 ### 通知先のサンプルアプリを起動
 
-新しいTerminalを開きます。
+Subscriptionの設定をする前に通知先の[FIWAREが公開しているサンプルアプリ](https://github.com/telefonicaid/fiware-orion/blob/master/scripts/accumulator-server.py)を起動します。
+
+![OpenTerminal](./assets/3-4.png)
+
+サンプルアプリを動作させるため、新しいTerminalを開きます。
 
 ![OpenMenu](./assets/3-1.png)
 
