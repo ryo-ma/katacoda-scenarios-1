@@ -1,0 +1,52 @@
+{
+  "title": "FIWARE Part2",
+  "description": "FIWARE Orionにおけるデータの操作およびAPIおよびデータ形式を学習します",
+  "difficulty": "Beginner",
+  "time": "10minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1 - FWIARE Orionを起動しよう",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2 - FIWARE Orionのデータを登録、更新をしてみよう",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3 - 登録したデータを取得しみよう",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 3 - 登録したデータを削除してみよう",
+        "text": "step4.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+         {
+           "file": "example-ngsi-room1.json",
+           "target": "/root/"
+         },
+         {
+           "file": "example-ngsi-room2.json",
+           "target": "/root/"
+         }
+      ]
+    }
+  },
+  "files":["example-ngsi.json"],
+  "environment": {
+    "uilayout": "terminal",
+    "showide": true
+  },
+  "backend": {
+    "imageid": "docker-swarm"
+  }
+}
