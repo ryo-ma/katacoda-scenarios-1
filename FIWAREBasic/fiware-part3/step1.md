@@ -18,8 +18,13 @@ Part3ではFIWARE OrionのSubscription機能について学習していきます
 # 1-2 FIWARE OrionのSubscription機能について
 
 FIWARE Orionにはデータの変更を検知して特定のシステムへ通知する機能があります。
-**/v2/subscriptions/**に通知先の設定をすることで実現できます。
+**/v2/subscriptions/**へPOSTすることで通知の設定ができます。
 
+POSTする際のbodyは以下の通りです。
+
+![OpenTerminal](./assets/3-3.png)
+
+この例ではpressuerの値更新を検知したら通知先のURLへpressuerのattributeをPOSTで送信するような設定です。
 
 ### 通知先のサンプルアプリを起動
 
