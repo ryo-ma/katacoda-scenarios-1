@@ -11,11 +11,6 @@
       "course_id": "fiware-part2",
       "title": "Part2-FIWARE Orionにおけるデータの操作",
       "description": "FIWARE Orionにおけるデータの操作およびAPIおよびデータ形式を学習します"
-    },
-    {
-      "course_id": "fiware-part3",
-      "title": "Part3-FIWARE Orionによる他システムへの通知",
-      "description": "FIWARE OrionのSubscription機能について学習します"
     }
   ]
 }
