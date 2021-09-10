@@ -13,14 +13,6 @@
       {
         "title": "Step 2 - FIWARE Orionのデータを登録、更新をしてみよう",
         "text": "step2.md"
-      },
-      {
-        "title": "Step 3 - 登録したデータを取得しみよう",
-        "text": "step3.md"
-      },
-      {
-        "title": "Step 3 - 登録したデータを削除してみよう",
-        "text": "step4.md"
       }
     ],
     "intro": {
