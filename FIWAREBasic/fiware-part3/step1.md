@@ -24,7 +24,7 @@ POSTする際のbodyは以下の通りです。
 
 ![OpenTerminal](./assets/3-3.png)
 
-この例ではpressuerの値更新を検知したら通知先のURLへpressuerのattributeをPOSTで送信するような設定です。
+この例では**Room1**の**pressureの値**が更新されたら、通知先のURLへ**pressureのattribute**をHTTPのPOSTで送信するような設定です。
 
 ### 通知先のサンプルアプリを起動
 
