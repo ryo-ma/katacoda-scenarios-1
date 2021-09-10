@@ -1,4 +1,4 @@
-Part2ではFIWARE Orionのデータ操作における基本的な操作を学習していきます。
+Part3ではFIWARE OrionのSubscription機能について学習していきます。
 
 
 # 1-1 FIWARE OrionとMongoDBの起動確認
@@ -12,7 +12,7 @@ Part2ではFIWARE Orionのデータ操作における基本的な操作を学習
 
 `curl localhost:1026/v2/entities`{{copy}}
 
-初期データとしてRoom1のEntityが表示されたら成功です。
+初期データとして登録されているRoom1のEntityが表示されたら成功です。
 
 
 # 1-2 FIWARE OrionのSubscription機能について

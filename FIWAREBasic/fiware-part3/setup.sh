@@ -5,5 +5,6 @@ wget https://raw.githubusercontent.com/telefonicaid/fiware-orion/master/scripts/
 chmod a+x accumulator-server.py
 wget https://github.com/telefonicaid/fiware-orion/raw/master/docker/docker-compose.yml
 docker-compose up -d
-curl localhost:1026/v2/entities -s -S -H 'Content-Type: application/json' -d @example-ngsi-room1.json
 rm docker-compose.yml
+sleep 5
+curl localhost:1026/v2/entities -s -S -H 'Content-Type: application/json' -d @example-ngsi-room1.json
