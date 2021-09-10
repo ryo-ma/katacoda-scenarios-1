@@ -22,7 +22,7 @@ FIWARE Orionにはデータの変更を検知して特定のシステムへ通�
 
 POSTする際のbodyは以下の通りです。
 
-![OpenTerminal](./assets/3-3.png)
+![SubscriptionBody](./assets/3-3.png)
 
 この例では**Room1**の**pressureの値**が更新されたら、通知先のURLへ**pressureのattribute**をHTTPのPOSTで送信するような設定です。
 
@@ -30,7 +30,7 @@ POSTする際のbodyは以下の通りです。
 
 Subscriptionの設定をする前に通知先の[FIWAREが公開しているサンプルアプリ](https://github.com/telefonicaid/fiware-orion/blob/master/scripts/accumulator-server.py)を起動します。
 
-![OpenTerminal](./assets/3-4.png)
+![Accumulate](./assets/3-4.png)
 
 サンプルアプリを動作させるため、新しいTerminalを開きます。
 
@@ -88,3 +88,5 @@ pressureの値を変更してみます。
 
 新しいTerminalを開きログを確認してみます。  
 通知された結果が以下のように出力されています。
+
+![Result](./assets/3-2.png)
