@@ -11,7 +11,7 @@
         "foreground": "setup.sh"
       },
       {
-        "title": "Step 2 - FIWARE Orionのデータを登録、更新をしてみよう",
+        "title": "Step 2 - FIWARE Orion Subscriptionの様々設定について",
         "text": "step2.md"
       }
     ],

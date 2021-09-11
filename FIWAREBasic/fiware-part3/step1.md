@@ -90,3 +90,17 @@ pressureの値を変更してみます。
 通知された結果が以下のように出力されています。
 
 ![Result](./assets/3-5.png)
+
+# 1-2 Subscirptionの確認
+
+**/v2/subscriptions**に対してGETすることでsubscirptionの一覧を取得できます。
+
+`curl localhost:1026/v2/subscriptions | jq`{{copy}}
+
+先ほど作成したsubscriptionにidが作成されていることが確認できます。
+
+![subscriptionId](./assets/3-7.png)
+
+このidを使用し**/v2/subscriptions/{id}**のように指定することで、PATCHで更新、DELETEで削除を行うことができます。
+
+次のpartでsubscriptionの更新を行うので環境変数にsubscriptionのidを設定しておきます。
