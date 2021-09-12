@@ -41,17 +41,17 @@ services:
     hostname: mongo-db
     container_name: db-mongo
     ports:
-      - "27017:27017" 
+      - "27017:27017"
     command: --bind_ip_all --smallfiles
     volumes:
       - mongo-db:/data
-      
+
   postgres-db:
     image: postgres
     hostname: postgres-db
     container_name: db-postgres
     ports:
-      - "5432:5432
+      - "5432:5432"
     environment:
       - "POSTGRES_PASSWORD=password"
       - "POSTGRES_USER=postgres"
