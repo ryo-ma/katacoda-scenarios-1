@@ -24,6 +24,8 @@ Part4ではFIWARE Cygnusによる履歴データの作成について学習し�
 
 `curl localhost:1026/v2/entities | jq`{{copy}}
 
+# 1-2 SubscriptionによるCygnusへの通知
+
 Cygnusに履歴データを作成する方法はOrionからのSubscriptionによる通知で実現します。
 
 以下のSubscription設定でcygnusの**/notify**へ通知するように設定します。
@@ -55,3 +57,15 @@ curl -v -X PATCH localhost:1026/v2/subscriptions/${SUBSCRIPTION_ID} -s -S -H 'Co
 }
 EOF
 ```{{copy}}
+
+temperatureの値を変更してみます。
+
+`curl localhost:1026/v2/entities/Room1/attrs/temperature/value -s -S -H 'Content-Type: text/plain' -X PUT -d 29.5`{{copy}}
+
+postgreSQL Clientを起動してデータベースに接続を行います。
+
+`docker run -it --rm  --network root_default jbergknoff/postgresql-client postgresql://postgres:password@postgres-db:5432/postgres`{{copy}}
+
+スキーマの一覧を確認します。
+
+`\dn`
