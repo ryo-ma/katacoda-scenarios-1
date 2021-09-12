@@ -37,7 +37,7 @@ curl -v localhost:1026/v2/subscriptions -s -S -H 'Content-Type: application/json
   "subject": {
     "entities": [
       {
-        "idPattern"l ".*",
+        "idPattern": ".*",
         "type": "Room"
       }
     ],
