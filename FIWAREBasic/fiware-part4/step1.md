@@ -20,4 +20,38 @@ Part4ではFIWARE Cygnusによる履歴データの作成について学習し�
 
 `cat docker-compose.yaml`{{copy}}
 
+以下のコマンドで起動と初期データを確認します。
 
+`curl localhost:1026/v2/entities | jq`{{copy}}
+
+Cygnusに履歴データを作成する方法はOrionからのSubscriptionによる通知で実現します。
+
+以下のSubscription設定でcygnusの**/notify**へ通知するように設定します。
+
+```json
+curl -v -X PATCH localhost:1026/v2/subscriptions/${SUBSCRIPTION_ID} -s -S -H 'Content-Type: application/json' -d @- <<EOF
+{
+  "description": "A subscription to get info about Room",
+  "subject": {
+    "entities": [
+      {
+        "idPattern"l ".*",
+        "type": "Room"
+      }
+    ],
+    "condition": {
+      "attr": ["temperature", "pressure"]
+    }
+  },
+  "notification": {
+    "http": {
+      "url": "http://cygnus:5050/notify"
+    },
+    "attrs": [
+      "temperature",
+      "pressure"
+    ]
+  }
+}
+EOF
+```{{copy}}
