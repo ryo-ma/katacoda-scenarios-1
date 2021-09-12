@@ -30,6 +30,10 @@
          {
            "file": "example-ngsi-room2.json",
            "target": "/root/"
+         },
+         {
+           "file": "docker-compose.yml",
+           "target": "/root/"
          }
       ]
     }
