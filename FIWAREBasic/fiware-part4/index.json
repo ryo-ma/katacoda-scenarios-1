@@ -1,0 +1,45 @@
+{
+  "title": "FIWARE Part4",
+  "description": "FIWARE Cygnusによる履歴データの作成",
+  "difficulty": "Beginner",
+  "time": "10minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1 - FIWARE Cygnusについて",
+        "text": "step1.md",
+        "foreground": "setup.sh"
+      },
+      {
+        "title": "Step 2 - FIWARE Orion Subscriptionの様々設定について",
+        "text": "step2.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+         {
+           "file": "example-ngsi-room1.json",
+           "target": "/root/"
+         },
+         {
+           "file": "example-ngsi-room2.json",
+           "target": "/root/"
+         }
+      ]
+    }
+  },
+  "files":["example-ngsi.json"],
+  "environment": {
+    "uilayout": "terminal",
+    "showide": true
+  },
+  "backend": {
+    "imageid": "docker-swarm"
+  }
+}

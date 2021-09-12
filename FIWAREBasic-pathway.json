@@ -16,6 +16,11 @@
       "course_id": "fiware-part3",
       "title": "Part3-FIWARE Orionによる他システムへの通知",
       "description": "FIWARE OrionのSubscription機能について学習します"
+    },
+    {
+      "course_id": "fiware-part4",
+      "title": "Part3-FIWARE Cygnusによる履歴データの作成",
+      "description": "FIWARE Cygnusを使った履歴データ作成について学習します"
     }
   ]
 }
