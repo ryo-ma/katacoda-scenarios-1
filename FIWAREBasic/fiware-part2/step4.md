@@ -10,7 +10,7 @@
 
 ## 4-2 Attributeの削除
 
-1. **/v2/entities/{id}/attrs/{{attrName}}** に対してDELETEメソッドを使うことで指定したEntityを削除することができます。
+1. **/v2/entities/{id}/attrs/{attrName}** に対してDELETEメソッドを使うことで指定したEntityを削除することができます。
 
    `curl localhost:1026/v2/entities/Room1/attrs/pressure -X DELETE`{{copy}}
 
