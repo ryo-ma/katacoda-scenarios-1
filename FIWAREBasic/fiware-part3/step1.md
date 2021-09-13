@@ -106,7 +106,8 @@ pressureの値を変更してみます。
 
 このidを使用し**/v2/subscriptions/{id}**のように指定することで、PATCHで更新、DELETEで削除を行うことができます。
 
-次のpartでsubscriptionの更新を行うので環境変数にsubscriptionのidを設定しておきます。  
-=以降に先ほど取得したsubscription idをコピー&ペーストして実行します。
+次のpartでsubscriptionの更新を行うので環境変数にsubscriptionのidを設定しておきます。
+
+以下のコマンドの = 以降に先ほど取得したsubscription idをコピー&ペーストして実行します。
 
 `SUBSCRIPTION_ID=`{{copy}}

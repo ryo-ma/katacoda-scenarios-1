@@ -46,4 +46,4 @@ temperatureの値を変更してみます。
 **Terminal2**を開きログを確認してみます。
 先ほどと同じように通知された結果が確認できます。
 
-他にも様々な条件や設定で通知を行うことができます。詳細は公式の[ngsiv2_implementation_note](uhttps://github.com/telefonicaid/fiware-orion/blob/master/doc/manuals/user/ngsiv2_implementation_notes.md#subscription-payload-validations)
+他にも様々な条件や設定で通知を行うことができます。詳細は公式の[ngsiv2_implementation_note](uhttps://github.com/telefonicaid/fiware-orion/blob/master/doc/manuals/user/ngsiv2_implementation_notes.md#subscription-payload-validations)に記載されています。
