@@ -28,7 +28,8 @@ Part4ではFIWARE Cygnusによる履歴データの作成について学習し�
 
 Cygnusに履歴データを作成する方法はOrionからのSubscriptionによる通知で実現します。
 
-以下のSubscription設定でcygnusの**/notify**へ通知するように設定します。
+以下のSubscription設定でcygnusの**/notify**へ通知するように設定します。  
+**/notify**はOrionからのSubscription通知を受けて履歴ビューを作成してくれるエンドポイントになります。
 
 ```json
 curl -v localhost:1026/v2/subscriptions -s -S -H 'Content-Type: application/json' -d @- <<EOF
@@ -42,7 +43,7 @@ curl -v localhost:1026/v2/subscriptions -s -S -H 'Content-Type: application/json
       }
     ],
     "condition": {
-      "attr": ["temperature", "pressure"]
+      "attr": ["temperature"]
     }
   },
   "notification": {
@@ -50,17 +51,22 @@ curl -v localhost:1026/v2/subscriptions -s -S -H 'Content-Type: application/json
       "url": "http://cygnus:5055/notify"
     },
     "attrs": [
-      "temperature",
-      "pressure"
+      "temperature"
     ]
   }
 }
 EOF
 ```{{copy}}
 
-temperatureの値を変更してみます。
+気温が徐々に変化していったことを想定してtemperatureの値を変更してみます。
 
 `curl localhost:1026/v2/entities/Room1/attrs/temperature/value -s -S -H 'Content-Type: text/plain' -X PUT -d 29.5`{{copy}}
+
+`curl localhost:1026/v2/entities/Room1/attrs/temperature/value -s -S -H 'Content-Type: text/plain' -X PUT -d 30.0`{{copy}}
+
+`curl localhost:1026/v2/entities/Room1/attrs/temperature/value -s -S -H 'Content-Type: text/plain' -X PUT -d 30.5`{{copy}}
+
+`curl localhost:1026/v2/entities/Room1/attrs/temperature/value -s -S -H 'Content-Type: text/plain' -X PUT -d 30.2`{{copy}}
 
 # 1-3 履歴データの確認
 
@@ -68,6 +74,7 @@ postgreSQL Clientを起動してデータベースに接続を行います。
 
 `docker run -it --rm  --network root_default jbergknoff/postgresql-client postgresql://postgres:password@postgres-db:5432/postgres`{{copy}}
 
-スキーマの一覧を確認します。
 
-`\dn`{{copy}}
+Room1の履歴を確認してみます。
+
+`SELECT * FROM default_service.room1_room limit 10;`{{copy}}
