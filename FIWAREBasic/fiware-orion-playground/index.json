@@ -1,0 +1,41 @@
+{
+  "title": "FIWARE Orion Playground",
+  "description": "自由にOrionを利用しNGSIの学習などに活用するPlaygroundです",
+  "difficulty": "Beginner",
+  "time": "10minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "FIWARE Orion Playground",
+        "text": "step1.md",
+        "foreground": "setup.sh"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+         {
+           "file": "ngsi-room1.json",
+           "target": "/root/"
+         },
+         {
+           "file": "docker-compose.yml",
+           "target": "/root/"
+         }
+      ]
+    }
+  },
+  "files":["example-ngsi.json"],
+  "environment": {
+    "uilayout": "terminal",
+    "showide": true
+  },
+  "backend": {
+    "imageid": "docker-swarm"
+  }
+}
