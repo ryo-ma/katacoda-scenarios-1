@@ -1,5 +1,6 @@
 Part4ではFIWARE Cygnusによる履歴データの作成について学習していきます。
 
+![Cygnus概要](./assets/4-0.png)
 
 # 1-1 環境の起動
 

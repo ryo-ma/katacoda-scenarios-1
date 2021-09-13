@@ -1,11 +1,12 @@
 Part2ではFIWARE Orionのデータ操作における基本的な操作を学習していきます。
 
+![Orion概要](./assets/1-2.png)
 
 # 1-1 FIWARE OrionとMongoDBの起動
 
 まずは以下の構成を作ります。
 
-![全体構成図](https://github.com/c-3lab/katacoda-scenarios/raw/main/assets/part1/1-1.png)
+![全体構成図](./assets/1-1.png)
 
 
 今回はdocker-composeを使い、FIWARE OrionとMongoDBの起動を同時に行います。  

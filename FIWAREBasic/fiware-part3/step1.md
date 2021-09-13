@@ -1,5 +1,6 @@
 Part3ではFIWARE OrionのSubscription機能について学習していきます。
 
+![Orion概要](./assets/3-0.png)
 
 # 1-1 FIWARE OrionとMongoDBの起動確認
 
