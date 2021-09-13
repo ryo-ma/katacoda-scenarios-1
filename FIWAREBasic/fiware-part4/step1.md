@@ -47,7 +47,7 @@ curl -v localhost:1026/v2/subscriptions -s -S -H 'Content-Type: application/json
   },
   "notification": {
     "http": {
-      "url": "http://cygnus:5050/notify"
+      "url": "http://cygnus:5055/notify"
     },
     "attrs": [
       "temperature",
