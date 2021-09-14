@@ -14,6 +14,10 @@
 
 初期データとして登録されているRoom1のEntityが表示されたら成功です。
 
-# サンプルデータ
+# サンプルデータとデータタイプ
 
+参考：[smart-data-models](https://github.com/smart-data-models)
 
+# 水質のEntity
+
+![WaterQuality](./assets/1-2.png)
