@@ -18,6 +18,6 @@
 
 参考：[smart-data-models](https://github.com/smart-data-models)
 
-# 水質のEntity
+## WaterQuality
 
 ![WaterQuality](./assets/1-2.png)
