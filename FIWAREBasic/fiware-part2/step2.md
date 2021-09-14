@@ -22,6 +22,8 @@ NGSIではjson形式でデータを表現します。
 
 Orionではコンテキスト情報(例では温度、湿度など)を含めたデータの一括りをEntityと呼びます。
 
+![Entity](./assets/2-2.png)
+
 # 2-2 Entityの登録
 
 以下のコマンドで先ほどのEntityをOrionに登録して見ましょう。  
