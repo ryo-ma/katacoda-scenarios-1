@@ -105,5 +105,3 @@ pressureの値を変更してみます。
 ![subscriptionId](./assets/3-7.png)
 
 このidを使用し**/v2/subscriptions/{id}**のように指定することで、PATCHで更新、DELETEで削除を行うことができます。
-
-次のstepでsubscriptionの更新を行うので環境変数にsubscriptionのidを設定しておきます。
