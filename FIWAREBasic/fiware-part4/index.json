@@ -9,10 +9,6 @@
         "title": "Step 1 - FIWARE Cygnusについて",
         "text": "step1.md",
         "foreground": "setup.sh"
-      },
-      {
-        "title": "Step 2 - FIWARE Orion Subscriptionの様々設定について",
-        "text": "step2.md"
       }
     ],
     "intro": {
