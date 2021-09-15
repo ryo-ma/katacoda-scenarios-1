@@ -19,7 +19,7 @@ curl -v -X PATCH localhost:1026/v2/subscriptions/${SUBSCRIPTION_ID} -s -S -H 'Co
   "subject": {
     "entities": [
       {
-        "idPattern"l ".*",
+        "idPattern": ".*",
         "type": "Room"
       }
     ],
