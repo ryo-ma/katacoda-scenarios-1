@@ -87,7 +87,7 @@ EOF
 
 pressureの値を変更してみます。
 
-`curl localhost:1026/v2/entities/Room1/attrs/pressure/value -s -S -H 'Content-Type: text/plain' -X PUT -d 28.5`{{copy}}
+`curl localhost:1026/v2/entities/Room1/attrs/pressure/value -s -S -H 'Content-Type: text/plain' -X PUT -d 720`{{copy}}
 
 **Terminal2**を開きログを確認してみます。  
 通知された結果が以下のように出力されています。

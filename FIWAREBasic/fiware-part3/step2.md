@@ -24,7 +24,7 @@ curl -v -X PATCH localhost:1026/v2/subscriptions/${SUBSCRIPTION_ID} -s -S -H 'Co
       }
     ],
     "condition": {
-      "attr": ["temperature"]
+      "attr": ["pressure"]
     }
   },
   "notification": {
@@ -32,7 +32,7 @@ curl -v -X PATCH localhost:1026/v2/subscriptions/${SUBSCRIPTION_ID} -s -S -H 'Co
       "url": "https://[[HOST_SUBDOMAIN]]-1028-[[KATACODA_HOST]].environments.katacoda.com/accumulate"
     },
     "attrs": [
-      "temperature"
+      "pressure"
     ]
   }
 }
@@ -41,7 +41,7 @@ EOF
 
 temperatureの値を変更してみます。
 
-`curl localhost:1026/v2/entities/Room1/attrs/temperature/value -s -S -H 'Content-Type: text/plain' -X PUT -d 29.5`{{copy}}
+`curl localhost:1026/v2/entities/Room1/attrs/pressure/value -s -S -H 'Content-Type: text/plain' -X PUT -d 730`{{copy}}
 
 **Terminal2**を開きログを確認してみます。
 先ほどと同じように通知された結果が確認できます。
