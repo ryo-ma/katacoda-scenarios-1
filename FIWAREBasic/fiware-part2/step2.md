@@ -16,11 +16,11 @@ NGSIではjson形式でデータを表現します。
 `cat example-ngsi-room1.json`{{copy}}
 
 
-データモデル図の踏まえて、以下に実例として部屋(Room)の温度(temperature)と湿度(pressure)の情報を含んだEntityを示しています。
+データモデル図の踏まえて、以下に実例として部屋(Room)の温度(temperature)と気圧(pressure)の情報を含んだEntityを示しています。
 
 ![NGSIv2](./assets/2-1.png)
 
-Orionではコンテキスト情報(例では温度、湿度など)を含めたデータの一括りをEntityと呼びます。
+Orionではコンテキスト情報(例では温度、気圧など)を含めたデータの一括りをEntityと呼びます。
 
 ![Entity](./assets/2-2.png)
 
