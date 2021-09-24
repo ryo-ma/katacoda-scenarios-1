@@ -66,13 +66,18 @@ Orionでは"Fiware-ServicePath"というHTTPヘッダーでテナント名を設
 
 `curl localhost:1026/v2/entities -s -S -H 'Fiware-ServicePath: /tokyo/shinjuku/office' -H 'Content-Type: application/json' -d @example-ngsi-room1.json`{{copy}}
 
-以下のコマンドでEntity一覧を取得します。
+以下のコマンドでEntity一覧を取得します。  
+デフォルトのスコープ(/)では全てのスコープが取得されます。
 
 `curl localhost:1026/v2/entities | jq`{{copy}}
 
-デフォルトのスコープ(/)では何も取得されません。
 
-以下のコマンドでFiware-ServicePathを指定して取得します。
+別のスコープを指定したコマンドを実行します。  
+スコープが異なる場合はEntityが見えません。
+
+`curl localhost:1026/v2/entities -H 'Fiware-ServicePath: /tokyo/shibuya/office' | jq`{{copy}}
+
+以下のコマンドでFiware-ServicePathを指定して取得できます。
 
 `curl localhost:1026/v2/entities -H 'Fiware-ServicePath: /tokyo/shinjuku/office' | jq`{{copy}}
 
