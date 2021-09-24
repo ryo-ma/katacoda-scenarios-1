@@ -12,9 +12,6 @@ Part5ではFiware-ServiceとFiware-ServicePathについて学習します。
 
 * FIWARE Orion
 * MongoDB
-* FIWARE Cygnus
-* PostgreSQL
-
 
 # 1-2 FIWARE-Serviceによるマルチテナンシーについて
 
