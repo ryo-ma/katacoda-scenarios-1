@@ -1,0 +1,18 @@
+{
+  "id": "Room1",
+  "type": "Room",
+  "temperature": {
+     "value": 23.3,
+     "type": "Float",
+     "metadata": {}
+  },
+  "name": {
+     "value": "Tokyo Room",
+     "type": "Text",
+     "metadata": {}
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [139.7675527, 35.6816269]
+  }
+}

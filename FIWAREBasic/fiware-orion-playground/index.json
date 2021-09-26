@@ -24,6 +24,10 @@
            "target": "/root/"
          },
          {
+           "file": "sample-entity.json",
+           "target": "/root/"
+         },
+         {
            "file": "docker-compose.yml",
            "target": "/root/"
          }
