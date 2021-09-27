@@ -11,7 +11,7 @@
      "type": "Text",
      "metadata": {}
   },
-  "position": {
+  "location": {
     "type": "geo:point",
     "value": "35.6816269, 139.7675527",
     "metadata": {}

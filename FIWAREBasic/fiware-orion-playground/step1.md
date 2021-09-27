@@ -73,3 +73,10 @@ Attributeのtypeはvalueのデータ型を示すものですが、Orion内では
 **/v2/entities/{id}**のidで削除するEntityを指定
 
 `curl localhost:1026/v2/entities/Room3`{{copy}}
+
+## Fiware-Service指定
+
+curlコマンドの末尾に -H "Fiware-Service: {Fiware-Service名}"を追加  
+削除、追加、更新も同様の方法で可能です。
+
+`curl localhost:1026/v2/entities/ -H "Fiware-Service: group_x"`{{copy}}
