@@ -26,6 +26,7 @@ Attributeのtypeはvalueのデータ型を示すものですが、Orion内では
 | ---- | ---- | ---- |
 |  DateTime  |  日時を表現するタイプ ISO8601 形式で記述  | "2017-03-31T08:00:00Z" |
 |  geo:json  |  座標などを表現するタイプ  | {"type": "Point", "coordinates": [-3.7836974, 43.4741091] } |
+|  geo:point |  座標を表現するタイプ geo:jsonよりシンプル  | {"type": "geo:point", "value": "43.4741091, -3.7836974" } |
 
 ※ 参考  
 [DateTime 日時のサポート](https://github.com/telefonicaid/fiware-orion/blob/c86718ec33290a02813fb04d02a8cbf90129eaf2/doc/manuals.jp/user/ngsiv2_implementation_notes.md#datetime-support)
@@ -49,3 +50,26 @@ Attributeのtypeはvalueのデータ型を示すものですが、Orion内では
 ## WaterQuality
 
 ![WaterQuality](./assets/1-2.png)
+
+
+## FIWARE OrionおもなEntity操作
+
+### Entity追加
+
+`curl localhost:1026/v2/entities -s -S -H 'Content-Type: application/json' -d @sample-example.json`{{copy}}
+
+### Entity一覧取得
+
+`curl localhost:1026/v2/entities | jq`{{copy}}
+
+### Entity更新
+
+**/v2/entities/{id}**のidで変更するEntityを指定
+
+`curl localhost:1026/v2/entities/Room3 -s -S -H 'Content-Type: application/json' -d @sample-example.json`{{copy}}
+
+### Entity削除
+
+**/v2/entities/{id}**のidで削除するEntityを指定
+
+`curl localhost:1026/v2/entities/Room3`{{copy}}
