@@ -56,7 +56,7 @@ Attributeのtypeはvalueのデータ型を示すものですが、Orion内では
 
 ### Entity追加
 
-`curl localhost:1026/v2/entities -s -S -H 'Content-Type: application/json' -d @sample-example.json`{{copy}}
+`curl localhost:1026/v2/entities -s -S -H 'Content-Type: application/json' -d @sample-entity.json`{{copy}}
 
 ### Entity一覧取得
 
@@ -66,7 +66,7 @@ Attributeのtypeはvalueのデータ型を示すものですが、Orion内では
 
 **/v2/entities/{id}**のidで変更するEntityを指定
 
-`curl localhost:1026/v2/entities/Room3 -s -S -H 'Content-Type: application/json' -d @sample-example.json`{{copy}}
+`curl localhost:1026/v2/entities/Room3 -s -S -H 'Content-Type: application/json' -d @sample-entity.json`{{copy}}
 
 ### Entity削除
 
