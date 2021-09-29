@@ -76,7 +76,7 @@ Attributeのtypeはvalueのデータ型を示すものですが、Orion内では
 
 ## Fiware-Service指定
 
-curlコマンドの末尾に -H "Fiware-Service: {Fiware-Service名}"を追加  
+curlコマンドの末尾に `-H "Fiware-Service: {Fiware-Service名}"`を追加  
 削除、追加、更新も同様の方法で可能です。
 
-`curl localhost:1026/v2/entities/ -H "Fiware-Service: group_x"`{{copy}}
+`curl localhost:1026/v2/entities/ -H "Fiware-Service: group_x" | jq`{{copy}}
