@@ -29,7 +29,7 @@ Orionでは"Fiware-Service"というHTTPヘッダーでテナント名を設定�
 
 今回登録するRoom1 Entityを確認します。
 
-`cat example-ngsi-room1.json`
+`cat example-ngsi-room1.json`{{copy}}
 
 以下のコマンドで**tenant_a**にRoom1 Entityを登録します。
 
