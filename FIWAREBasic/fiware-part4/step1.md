@@ -27,6 +27,10 @@ Part4ではFIWARE Cygnusによる履歴データの作成について学習し�
 
 `curl localhost:1026/v2/entities | jq`{{copy}}
 
+katacodaのドメイン(外部アクセス)からのアクセス
+
+`curl https://[[HOST_SUBDOMAIN]]-1026-[[KATACODA_HOST]].environments.katacoda.com/version`{{copy}}
+
 # 1-2 SubscriptionによるCygnusへの通知
 
 Cygnusに履歴データを作成する方法はOrionからのSubscriptionによる通知で実現します。

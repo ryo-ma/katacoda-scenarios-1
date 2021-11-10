@@ -17,6 +17,10 @@ Part3ではFIWARE OrionのSubscription機能について学習していきます
 
 初期データとして登録されているRoom1のEntityが表示されたら成功です。
 
+katacodaのドメイン(外部アクセス)からのアクセス
+
+`curl https://[[HOST_SUBDOMAIN]]-1026-[[KATACODA_HOST]].environments.katacoda.com/version`{{copy}}
+
 
 # 1-2 FIWARE OrionのSubscription機能について
 

@@ -14,6 +14,10 @@
 
 初期データとして登録されているRoom1のEntityが表示されたら成功です。
 
+katacodaのドメイン(外部アクセス)からのアクセス
+
+ `curl https://[[HOST_SUBDOMAIN]]-1026-[[KATACODA_HOST]].environments.katacoda.com/v2/entities`{{copy}}
+
 ## Attribute typeについて
 
 Attributeのtypeはvalueのデータ型を示すものですが、Orion内では一部のデータ型以外はtypeに基づいたvalueの型チェックなどは行われません。

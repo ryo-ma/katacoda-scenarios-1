@@ -13,6 +13,10 @@ Part5ではFiware-ServiceとFiware-ServicePathについて学習します。
 * FIWARE Orion
 * MongoDB
 
+katacodaのドメイン(外部アクセス)からのアクセス
+
+`curl https://[[HOST_SUBDOMAIN]]-1026-[[KATACODA_HOST]].environments.katacoda.com/version`{{copy}}
+
 # 1-2 FIWARE-Serviceによるマルチテナンシーについて
 
 FIWARE には論理的にデータベースを分離するマルチテナンシーの機能があります。  

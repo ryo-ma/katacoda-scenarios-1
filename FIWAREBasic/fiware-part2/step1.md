@@ -41,3 +41,7 @@ FIWARE Orionが問題なく動作していることを確認するために以�
 `curl localhost:1026/v2/entities`{{copy}}
 
 まだデータは入っていないので空のjson配列`[]`が返ってくれば成功です。
+
+katacodaのドメイン(外部アクセス)からのアクセス方法
+
+`curl https://[[HOST_SUBDOMAIN]]-1026-[[KATACODA_HOST]].environments.katacoda.com/version`{{copy}}
