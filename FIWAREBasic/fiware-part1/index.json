@@ -22,9 +22,7 @@
     }
   },
   "environment": {
-    "uilayout": "terminal",
-    "showdashboard": true,
-    "dashboards": [{"name": "Display Orion", "port": 1026}]
+    "uilayout": "terminal"
   },
   "backend": {
     "imageid": "ubuntu"
