@@ -47,6 +47,6 @@
     "showide": true
   },
   "backend": {
-    "imageid": "docker-swarm"
+    "imageid": "ubuntu"
   }
 }

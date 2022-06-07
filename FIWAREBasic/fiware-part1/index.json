@@ -27,6 +27,6 @@
     "dashboards": [{"name": "Display Orion", "port": 1026}]
   },
   "backend": {
-    "imageid": "docker-swarm"
+    "imageid": "ubuntu"
   }
 }
